@@ -1,0 +1,217 @@
+In simple terms, a module is a single file containing python code, whereas a package is a collection of modules that are organized in a directory hierarchy
+
+
+-> Operators in Python
+
+print (2+5)
+print (3-1)
+print (2*3)
+print (5/2)
+print (10%3)
+print (3**3)
+print (5//2)
+----------------------------------------
+
+-> List in Python
+
+list = ['Harsh', "Rutul", "Diya"]
+print(list)
+---------------------------------------
+
+-> Tuple in Python
+
+list = ["Harsh","Rutul"]
+print(tuple(list))
+----------------------------------------
+
+-> Variables in Python
+
+print(str(21))
+print(int(21))
+print(float(21))
+
+print(type(str(21)))
+print(int(21))
+print(float(21))
+----------------------
+ -->Output Variables in Python
+
+x = "Harsh"
+y = "Bagadai"
+z = "Bipinbhai"
+print(x,y,z)
+print(x + y + z)
+
+----------------------
+
+ -->Global Variables
+	
+1) x = "University"
+
+def myFun():
+    x = "College"
+    print("LJ "+x)
+    
+myFun()
+
+print("Darshan "+x)
+
+2) def myFun():
+    global x
+    x = "College"
+    
+myFun()
+
+def myFun1():
+    global x
+    x = "University"
+    
+myFun1()
+
+def myFun2():
+    global x
+    x = "School"
+    
+myFun2()
+print("Darshan "+x) -> Output :- Darshan School
+
+--------------------
+
+  --> Assign Multiple Values
+x = y = z = "Orange"
+print(x)
+print(y)
+print(z)
+
+fruits = ["apple", "banana", "cherry"]
+x, y, z = fruits
+print(x)
+print(y)
+print(z)
+----------------------------------------------
+
+DataTypes in Python
+
+Text Type :- str
+Numberic Type :- int,float,complex
+Sequence Types :- list,tuple,range
+Mapping Types :- dict 07948924341
+Set Types :- set , frozenset
+Boolean Types :- bool
+Binary Types :- bytes,bytearray,memoryview
+None Type :- NoneType
+
+------------------------------------------------
+
+Numbers in Python :- 
+
+->Type Conversion
+
+#convert from int to float:
+x = float(1)
+
+#convert from float to int:
+y = int(2.8)
+
+#convert from int to complex:
+z = complex(1)
+
+print(x)
+print(y)
+print(z)
+
+print(type(x))
+print(type(y))
+print(type(z))
+
+-> Random selection of Number in given range
+
+import random
+
+print(random.randrange(1,100))
+
+---------------------------------------------
+
+-> String in Python
+
+--> String Slicing
+
+b = "Hello, World!"
+print(b[start:end:step])
+
+--------------------------
+
+--> Modify Strings
+
+Upper Case
+
+a = "Hello, World!"
+print(a.upper())
+
+Lower Case
+
+a = "Hello, World!"
+print(a.lower())
+
+Remove White Space
+
+a = " Hello, World! "
+print(a.strip())
+
+Replace String
+
+a = "Hello, World!"
+print(a.replace("H", "J"))
+
+Split String
+
+a = "Hello, World!"
+print(a.split(","))
+
+-------------------------------------------------------
+
+Input And Output
+
+a = 10
+b = 15
+
+c = print("Addition Of",a,"and",b,"is equal to",a+b)
+
+d = "Harsh"
+e = "Bagadai"
+g = "CodeTrade.io"
+
+f = print("My Name is {0} {1} currently working at {2}".format(d,e,g))
+
+--------------------------------------------------------
+
+-> For Loop in Python
+
+name = ["Harsh","Rutul"]
+for a in name:
+    print(a)
+	
+
+
+Python Code for Palidrome Number 
+
+n = int(input("Enter Number : "))
+sum = 0
+temp = n
+
+while(n>0):
+    m = n % 10
+    sum = (sum*10) + m
+    n = n // 10
+    
+if(sum==temp):
+    print("It is a Palidrome Number")
+else:
+    print("It is not a Palidrome Number")
+
+	
+Powering Number
+
+n = int(input("Enter Number : "))
+m = int(input("Enter Number : "))
+print(n ** m)
